@@ -66,16 +66,16 @@ public class PacmanBuilder extends EntityBuilder {
         // Addition of different animations
         AnimationManager animationManager = new AnimationManager();
         double duration = 0.10;
-        animationManager.addAnimation(Displacement.UP.orientation.toString()+EntityType.RED.name, "/Animation/pacnoel/pacnoelUp/init.txt",duration);
-        animationManager.addAnimation(Displacement.DOWN.orientation.toString()+EntityType.RED.name, "/Animation/pacnoel/pacnoelDown/init.txt",duration);
-        animationManager.addAnimation(Displacement.LEFT.orientation.toString()+EntityType.RED.name, "/Animation/pacnoel/pacnoelLeft/init.txt",duration);
-        animationManager.addAnimation(Displacement.RIGHT.orientation.toString()+EntityType.RED.name, "/Animation/pacnoel/pacnoelRight/init.txt",duration);
+        animationManager.addAnimation(Displacement.UP.orientation.toString()+EntityType.RED.name, "/Animation/redPacman/redPacUp/init.txt",duration);
+        animationManager.addAnimation(Displacement.DOWN.orientation.toString()+EntityType.RED.name, "/Animation/redPacman/redPacDown/init.txt",duration);
+        animationManager.addAnimation(Displacement.LEFT.orientation.toString()+EntityType.RED.name, "/Animation/redPacman/redPacLeft/init.txt",duration);
+        animationManager.addAnimation(Displacement.RIGHT.orientation.toString()+EntityType.RED.name, "/Animation/redPacman/redPacRight/init.txt",duration);
         animationManager.addAnimation(Displacement.UP.orientation.toString(), "/Animation/pacman/pacmanUp/init.txt",duration);
         animationManager.addAnimation(Displacement.DOWN.orientation.toString(), "/Animation/pacman/pacmanDown/init.txt",duration);
         animationManager.addAnimation(Displacement.LEFT.orientation.toString(), "/Animation/pacman/pacmanLeft/init.txt",duration);
         animationManager.addAnimation(Displacement.RIGHT.orientation.toString(), "/Animation/pacman/pacmanRight/init.txt",duration);
-        animationManager.addAnimation("mort", "/Animation/mort/init.txt",0.02);
-        animationManager.addAnimation("mortpacnoel", "/Animation/mort2/init.txt",1);
+        animationManager.addAnimation("dead", "/Animation/dead/init.txt",0.02);
+        animationManager.addAnimation("gameOver", "/Animation/dead2/init.txt",1);
         graphics.setAnimationManager(animationManager);
 
 

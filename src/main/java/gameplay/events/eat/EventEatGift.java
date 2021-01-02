@@ -67,7 +67,7 @@ public class EventEatGift extends Event {
             System.out.println("Remove Five Coins Randomly!");
         }
 
-        SoundManager.getInstance().addSound("pacman_eatfruit.wav", "gift", false, 0.2f, 0L);
+        SoundManager.getInstance().addSound("eatGift.wav", "eatGift", false, 0.2f, 0L);
 
 
     }

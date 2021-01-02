@@ -40,7 +40,7 @@ public class SpecialCoinBuilder extends EntityBuilder {
     public void buildGraphComp(double width, double height) {
         // Initialization of the graphics component
         Graphics graphics = new Graphics(0);
-        graphics.setImage("/Image/object/sapin.png");
+        graphics.setImage("/Image/object/fineCoin.png");
         graphics.setHeight(height);
         graphics.setWidth(width);
         entity.setGraphicsComponent(graphics);

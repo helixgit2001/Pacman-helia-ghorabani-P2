@@ -17,7 +17,7 @@ public class TestUnitIAl {
     @Test
     public void shortestRightPath() {
         try {
-            LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/TestTimer/lignedroite.txt");
+            LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/Test/testRightPath.txt");
         MapRep mapRep = levelGenerator.getMapRepresentation();
         Entity[][] entities = mapRep.getMatrix();
         ShortestPathAl shortestPathAl = new ShortestPathAl(new BFS((List<String>) mapRep));
@@ -53,7 +53,7 @@ public class TestUnitIAl {
     public void ShortestWallPath() {
         try {
 
-            LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/TestTimer/mur.txt");
+            LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/Test/testWall.txt");
             MapRep mapRep = levelGenerator.getMapRepresentation();
             Entity[][] entities = mapRep.getMatrix();
             ShortestPathAl shortestPathAl = new ShortestPathAl(new BFS((List<String>) mapRep));

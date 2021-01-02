@@ -18,7 +18,7 @@ public class EventWinAllLevel extends Event {
 
     @Override
     public void handle() {
-        SoundManager.getInstance().addSound("pacman_beginning.wav", "intro", false, 0.2f, 0L);
+        SoundManager.getInstance().addSound("endLevel.wav", "end", false, 0.2f, 0L);
         controller.getGameView().getChildren().clear();
         controller.setEndLevel(false);
         controller.getBackMenuWin();

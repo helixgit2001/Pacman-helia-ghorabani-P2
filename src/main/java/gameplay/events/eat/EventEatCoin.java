@@ -32,7 +32,7 @@ public class EventEatCoin extends Event {
 int s = 0;
         pacmanModel.addScore(10);
         if (entity != null) {
-            if (entity.getGraphicsComponent().name.equalsIgnoreCase("/Image/object/cerise.png")) {
+            if (entity.getGraphicsComponent().name.equalsIgnoreCase("/Image/object/stopCoin.png")) {
                 System.out.println("stop ghosts");
                 LevelGenerator.ghosts.get(0).setControllerComponent(new NothingAl());
                 LevelGenerator.ghosts.get(1).setControllerComponent(new NothingAl());
@@ -60,6 +60,6 @@ int s = 0;
         assert entity != null;
         entity.getGraphicsComponent().getCurrentImage().setImage(null);
         map.deleteEntity(position, entity);
-        SoundManager.getInstance().addSound("pacman_chomp.wav", "chomp", false, 0.2f, 500L);
+        SoundManager.getInstance().addSound("eatCoin.wav", "eatCoin", false, 0.2f, 500L);
     }
 }

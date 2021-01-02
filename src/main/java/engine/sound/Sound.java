@@ -7,13 +7,13 @@ import java.io.IOException;
  * Class corresponding to a sound played, it is a thread
  */
 public class Sound extends Thread {
-    private AudioListener listener = new AudioListener();
+    private final AudioListener listener = new AudioListener();
     // Attributes for playing the sound
     private Clip clip;
     // Set whether to play the sound loop or not
     private boolean isLoop = false;
-    private String name;
-    private Long start;
+    private final String name;
+    private final Long start;
 
     Sound(String soundName, String name, Long start) {
         super();

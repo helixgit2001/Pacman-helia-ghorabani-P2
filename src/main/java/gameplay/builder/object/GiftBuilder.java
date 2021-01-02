@@ -38,7 +38,7 @@ public class GiftBuilder extends EntityBuilder {
     @Override
     public void buildGraphComp(double length, double width) {
         Graphics graphics = new Graphics(0);
-        graphics.setImage("/Image/object/gift.png");
+        graphics.setImage("/Image/object/giftCoin.png");
         graphics.setHeight(width);
         graphics.setWidth(length);
         entity.setGraphicsComponent(graphics);

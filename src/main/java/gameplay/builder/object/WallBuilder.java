@@ -39,7 +39,7 @@ public class WallBuilder extends EntityBuilder {
     public void buildGraphComp(double width, double height) {
         // Initialization of the graphics component
         Graphics graphics = new Graphics(3);
-        graphics.setImage("/Image/object/mur.png");
+        graphics.setImage("/Image/object/wall.png");
         graphics.setHeight(height);
         graphics.setWidth(width);
         entity.setGraphicsComponent(graphics);

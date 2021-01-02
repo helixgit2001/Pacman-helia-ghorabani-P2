@@ -177,7 +177,7 @@ public class LevelGenerator {
                     Random random = new Random();
                     if (i == random.nextInt(18) && counter < 2) {
                         counter ++;
-                        builder.getEntity().getGraphicsComponent().setImage("/Image/object/cerise.png");
+                        builder.getEntity().getGraphicsComponent().setImage("/Image/object/stopCoin.png");
                         builder.getEntity().getGraphicsComponent().setHeight(length);
                         builder.getEntity().getGraphicsComponent().setWidth(width);
                         coins.add(builder.getEntity());

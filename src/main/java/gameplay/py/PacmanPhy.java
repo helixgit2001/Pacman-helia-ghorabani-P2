@@ -103,7 +103,7 @@ public class PacmanPhy extends PhyComp {
                 ownedEntity.setPositioning(Displacement.NOTHING.orientation);
             } else {
                 GameModel.getInstance().resetGame();
-                SoundManager.getInstance().addSound("touch.wav", "touch", false, 0.2f, 0L);
+                SoundManager.getInstance().addSound("die.wav", "die", false, 0.2f, 0L);
             }
         }
     }

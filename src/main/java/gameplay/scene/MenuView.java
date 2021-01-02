@@ -19,7 +19,7 @@ public class MenuView extends View {
 
     @Override
     public void init() {
-        setBackgroundScene("/Image/Menu/PacNoel_menu.png");
+        setBackgroundScene("/Image/Menu/menu.png");
 
         gameButtonP = new ButtonUI("Start Game",getPrefWidth() * 0.27,getPrefHeight() * 0.3);
         gameButtonP.changeFont(getClass().getResourceAsStream("/Font/Font4.ttf"),30);

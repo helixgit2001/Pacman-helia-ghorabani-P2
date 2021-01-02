@@ -51,7 +51,7 @@ public class EventEatSpecialCoin extends Event {
         if(!pacmanModel.isRed()){
             pacmanModel.setRed(true);
             SoundManager.getInstance().stopAllSound();
-            SoundManager.getInstance().addSound("isNoel.wav", "isNoel", false, 0.8f, 0L);
+            SoundManager.getInstance().addSound("isRed.wav", "isRed", false, 0.8f, 0L);
             EventManager.getEventManager().addEvent(new EventEndPower(pacmanModel, ownedEntity, 660));
 
 

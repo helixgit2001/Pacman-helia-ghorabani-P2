@@ -28,9 +28,9 @@ public class EventPacmanDie extends Event {
             GameViewController.setSessionBestScore(pacmanModel.getScore());
             score.setScoreFile(pacmanModel.getScore()+"");
         }
-        entityOwned.getGraphicsComponent().getAnimationManager().setCurrentAnimation("mort");
+        entityOwned.getGraphicsComponent().getAnimationManager().setCurrentAnimation("dead");
         SoundManager.getInstance().stopAllSound();
-        SoundManager.getInstance().addSound("mort.wav", "mort", false, 0.2f, 400L);
+        SoundManager.getInstance().addSound("dead.wav", "dead", false, 0.2f, 400L);
         EventManager.getEventManager().addEvent(new EventPowerfulPacDie(entityOwned, entity, 200));
     }
 }
