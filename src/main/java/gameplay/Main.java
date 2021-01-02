@@ -4,6 +4,9 @@ import engine.core_kernel.GameHelper;
 import gameplay.scene.MenuController;
 
 /**
+ * Github:
+ * https://github.com/helixgit2001/Pacman-helia-ghorabani-P2
+ * @ author Helia Ghorbani
  * Class used to launch the Helix game
  */
 public class Main {
