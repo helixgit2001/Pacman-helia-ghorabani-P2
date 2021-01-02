@@ -1,6 +1,6 @@
 package engine.core_kernel;
 
-import engine.physics.Position;
+import engine.phy.Position;
 
 import java.util.List;
 

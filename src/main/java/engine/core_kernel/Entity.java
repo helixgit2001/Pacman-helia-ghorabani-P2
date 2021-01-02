@@ -1,7 +1,7 @@
 package engine.core_kernel;
 
-import engine.physics.PhyComp;
-import engine.physics.Position;
+import engine.phy.PhyComp;
+import engine.phy.Position;
 import engine.controller.ControllerComp;
 import engine.graphic.Graphics;
 

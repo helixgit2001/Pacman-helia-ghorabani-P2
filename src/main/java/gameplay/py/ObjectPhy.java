@@ -1,7 +1,7 @@
 package gameplay.py;
 
-import engine.physics.Collider;
-import engine.physics.PhyComp;
+import engine.phy.Collider;
+import engine.phy.PhyComp;
 
 /**
  * class of objects physically present in the game

@@ -1,4 +1,4 @@
-package engine.physics;
+package engine.phy;
 
 import engine.core_kernel.Entity;
 

@@ -1,7 +1,7 @@
 package engine.core_kernel.builder;
 
 import engine.core_kernel.Entity;
-import engine.physics.Position;
+import engine.phy.Position;
 
 /**
  * abstract class as a model for all builders

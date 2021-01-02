@@ -1,6 +1,6 @@
 package engine.core_kernel.builder;
 
-import engine.physics.Position;
+import engine.phy.Position;
 
 /**
  * Class building entity

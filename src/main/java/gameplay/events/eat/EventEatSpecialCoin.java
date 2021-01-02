@@ -5,7 +5,7 @@ import engine.core_kernel.Entity;
 import engine.core_kernel.Event;
 import engine.core_kernel.EventManager;
 import engine.core_kernel.Map;
-import engine.physics.Position;
+import engine.phy.Position;
 import engine.sound.SoundManager;
 
 /**

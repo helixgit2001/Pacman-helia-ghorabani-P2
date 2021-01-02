@@ -1,7 +1,7 @@
 package engine.core_kernel;
 
 
-import engine.physics.Position;
+import engine.phy.Position;
 import engine.ui.SceneManager;
 
 import java.io.IOException;

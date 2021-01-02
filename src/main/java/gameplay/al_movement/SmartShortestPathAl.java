@@ -2,9 +2,9 @@ package gameplay.al_movement;
 
 import gameplay.model.GameModel;
 import gameplay.py.GhostPhy;
-import engine.physics.BoxCollider;
-import engine.physics.PhyComp;
-import engine.physics.Position;
+import engine.phy.BoxCollider;
+import engine.phy.PhyComp;
+import engine.phy.Position;
 import engine.al.AL;
 import engine.al.BFS;
 import engine.core_kernel.Entity;

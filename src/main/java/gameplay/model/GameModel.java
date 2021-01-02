@@ -4,7 +4,7 @@ import gameplay.LevelGenerator;
 import gameplay.py.Displacement;
 import engine.core_kernel.Entity;
 import engine.core_kernel.Map;
-import engine.physics.Position;
+import engine.phy.Position;
 
 /**
  * Class storing game stats information

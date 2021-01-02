@@ -1,4 +1,4 @@
-package engine.physics;
+package engine.phy;
 
 /**
  * Class corresponding to a box allowing to detect collisions

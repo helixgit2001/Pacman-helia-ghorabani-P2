@@ -11,7 +11,7 @@ import engine.core_kernel.builder.*;
 import engine.al.MapRep;
 import engine.core_kernel.Entity;
 import engine.core_kernel.Map;
-import engine.physics.Position;
+import engine.phy.Position;
 
 import java.io.BufferedReader;
 import java.io.IOException;

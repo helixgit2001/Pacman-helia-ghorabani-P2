@@ -2,9 +2,9 @@ package gameplay.py;
 
 import gameplay.EntityType;
 import engine.core_kernel.Entity;
-import engine.physics.Collider;
-import engine.physics.PhyComp;
-import engine.physics.Position;
+import engine.phy.Collider;
+import engine.phy.PhyComp;
+import engine.phy.Position;
 
 /**
  * class of physical components of phantoms

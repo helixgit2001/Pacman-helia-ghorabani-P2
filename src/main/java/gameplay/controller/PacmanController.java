@@ -6,7 +6,7 @@ import engine.controller.KeyboardController;
 import engine.core_kernel.Entity;
 import gameplay.py.Displacement;
 import engine.core_kernel.Map;
-import engine.physics.Position;
+import engine.phy.Position;
 
 import java.util.ArrayList;
 import java.util.List;

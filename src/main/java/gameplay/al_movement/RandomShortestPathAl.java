@@ -1,6 +1,6 @@
 package gameplay.al_movement;
 
-import engine.physics.Position;
+import engine.phy.Position;
 import engine.al.AL;
 import engine.al.BFS;
 import engine.core_kernel.Entity;

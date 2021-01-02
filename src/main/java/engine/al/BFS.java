@@ -1,6 +1,6 @@
 package engine.al;
 
-import engine.physics.Position;
+import engine.phy.Position;
 import engine.core_kernel.Entity;
 
 import java.util.ArrayList;

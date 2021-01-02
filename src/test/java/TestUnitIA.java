@@ -1,5 +1,5 @@
 import gameplay.LevelGenerator;
-import engine.physics.Position;
+import engine.phy.Position;
 import engine.al.BFS;
 import engine.al.MapRep;
 import gameplay.al_movement.ShortestPathAl;

@@ -1,4 +1,4 @@
-package engine.physics;
+package engine.phy;
 
 /**
  * Interface defining the classes allowing to detect collisions and exit of zone

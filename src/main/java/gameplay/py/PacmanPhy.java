@@ -11,9 +11,9 @@ import gameplay.model.PacmanModel;
 import engine.core_kernel.Entity;
 import engine.core_kernel.EventManager;
 import engine.core_kernel.Map;
-import engine.physics.Collider;
-import engine.physics.PhyComp;
-import engine.physics.Position;
+import engine.phy.Collider;
+import engine.phy.PhyComp;
+import engine.phy.Position;
 import engine.sound.SoundManager;
 import java.util.HashMap;
 
