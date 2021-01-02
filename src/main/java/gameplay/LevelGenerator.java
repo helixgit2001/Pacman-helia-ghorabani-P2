@@ -23,19 +23,19 @@ public class LevelGenerator {
     public final static ArrayList<Entity> CopyGhosts = new ArrayList<>();
     public static ArrayList<Entity> coins = new ArrayList<>();
     public static ArrayList<Entity> copyCoins = new ArrayList<>();
-    private static Entity pacman;
-    private static Entity ghost;
-    private static List<Entity>[][] matrix;
+    private Entity pacman;
+    private Entity ghost;
+    private List<Entity>[][] matrix;
     private final double w;
     private final double l;
-    private static double width;
-    private static double length;
-    private static  Map map;
-    private static  ShortestPathAl shortestPathAl;
-    private static  RandomShortestPathAl randomShortestPathAl;
-    private static  SmartShortestPathAl smartShortestPathAl;
-    private static  HashMap<Entity, Position> initPositionEntities;
-    private static int counter = 0;
+    private double width;
+    private double length;
+    private final Map map;
+    private final ShortestPathAl shortestPathAl;
+    private final RandomShortestPathAl randomShortestPathAl;
+    private final SmartShortestPathAl smartShortestPathAl;
+    private final HashMap<Entity, Position> initPositionEntities;
+    private int counter = 0;
     private MapRep mapRep;
 
     /**
@@ -99,7 +99,7 @@ public class LevelGenerator {
      * @param tab Table row
      * @param i Table row number
      */
-    public static void putEntity(String[] tab, int i) {
+    private void putEntity(String[] tab, int i) {
         int j = 0;
         double posY = (length * i);
 
@@ -219,7 +219,7 @@ public class LevelGenerator {
     }
 
 
-    public static void setMatrix(int i, int j, Entity entity) { matrix[i][j].add(entity); }
+    public void setMatrix(int i, int j, Entity entity) { this.matrix[i][j].add(entity); }
 
     public Map getMap(){ return map; }
 

@@ -34,7 +34,6 @@ public class EventEatSpecialCoin extends Event {
         map.deleteEntity(position, entity);
         entity.getGraphicsComponent().getCurrentImage().setImage(null);
         Random random = new Random();
-        String[] coins = new String[5];
         try {
             for (int i = 0; i < 5; i++){
                 int c = random.nextInt(LevelGenerator.coins.size() - 1);
@@ -42,10 +41,7 @@ public class EventEatSpecialCoin extends Event {
                     map.addEntity((int) LevelGenerator.copyCoins.get(c).getPosition().getX(), (int) LevelGenerator.copyCoins.get(c).getPosition().getY(), LevelGenerator.coins.get(c));
                     pacmanModel.addScore(-10);
                 }
-                coins[i] = ".";
             }
-            int x = random.nextInt(15);
-            LevelGenerator.putEntity(coins, x);
             System.out.println("Add Five Coins Randomly!");
         } catch (IndexOutOfBoundsException e){
             System.out.println("Fail To Add Five Coins!");
