@@ -85,10 +85,10 @@ public class PacmanPhy extends PhyComp {
 
     /**
      * Check in case of collision with any ghost
-     * @param entity_owned
+     * @param ownedEntity
      * @param entity
      */
-    private void updateGhostCollision(Entity entity_owned, Entity entity) throws InterruptedException {
+    private void updateGhostCollision(Entity ownedEntity, Entity entity) throws InterruptedException {
         if (pacmanModel.isRed() && canEat(entity)){
             EventManager.getEventManager().addEvent(new EventEatGhost(pacmanModel, entity));
             GameModel.getInstance().resetEntity(entity);
@@ -97,10 +97,10 @@ public class PacmanPhy extends PhyComp {
             pacmanModel.decrementPV();
             if (pacmanModel.checkNull()){
                 if (!pacmanModel.isDead()){
-                    EventManager.getEventManager().addEvent(new EventPacmanDie(pacmanModel, entity, entity_owned, map));
+                    EventManager.getEventManager().addEvent(new EventPacmanDie(pacmanModel, entity, ownedEntity, map));
                 }
                 pacmanModel.setDead(true);
-                entity_owned.setPositioning(Displacement.NOTHING.orientation);
+                ownedEntity.setPositioning(Displacement.NOTHING.orientation);
             } else {
                 GameModel.getInstance().resetGame();
                 SoundManager.getInstance().addSound("touch.wav", "touch", false, 0.2f, 0L);
@@ -134,9 +134,9 @@ public class PacmanPhy extends PhyComp {
      */
     private void moveBack(Entity positioning){
         if(positioning.getPositioning() == null) return;
-        positioning.setPositioning((positioning.getPositioning()+180.0)%360);
+        positioning.setPositioning((positioning.getPositioning() + 180.0) % 360);
         positioning.getPhysicsComponent().update(positioning);
-        positioning.setPositioning((positioning.getPositioning()-180.0)%360);
+        positioning.setPositioning(( positioning.getPositioning() - 180.0)% 360 );
     }
 
     /**

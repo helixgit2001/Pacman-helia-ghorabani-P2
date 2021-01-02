@@ -5,7 +5,7 @@ package gameplay.model;
  */
 public class PacmanModel {
 
-    private final int PALIER = 10000;
+    private final int P = 10000;
     private int score, pv;
     private boolean isNoel;
     private boolean isDead;
@@ -16,7 +16,7 @@ public class PacmanModel {
         pv = 3;
         isNoel = false;
         isDead = false;
-        p = PALIER;
+        p = P;
     }
 
     public void incrementPV(){
@@ -54,17 +54,17 @@ public class PacmanModel {
         score += value;
         if (this.score >= this.p){
             incrementPV();
-            this.p += PALIER;
+            this.p += P;
         }
         System.out.println("Score : " + score);
     }
 
     /**
-     * activating pacman's super mode, making him invincible
-     * @param noel
+     * activating pacman's super mode, making him invisible
+     * @param powPac
      */
-    public void setRed(boolean noel) {
-        isNoel = noel;
+    public void setRed(boolean powPac) {
+        isNoel = powPac;
     }
 
     public boolean isRed() {

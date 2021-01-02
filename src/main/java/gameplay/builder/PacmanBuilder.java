@@ -78,6 +78,7 @@ public class PacmanBuilder extends EntityBuilder {
         animationManager.addAnimation("mortpacnoel", "/Animation/mort2/init.txt",1);
         graphics.setAnimationManager(animationManager);
 
+
         entity.setGraphicsComponent(graphics);
     }
 }

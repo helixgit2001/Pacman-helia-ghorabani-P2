@@ -37,12 +37,12 @@ public class Graphics implements Component {
         }
     }
 
-    public void setImage(String chemin) {
-        if (chemin == null)
+    public void setImage(String path) {
+        if (path == null)
             currentImage = null;
         else {
-            this.currentImage = new ImageView(new Image(Graphics.class.getResourceAsStream(chemin)));
-            name = chemin;
+            this.currentImage = new ImageView(new Image(Graphics.class.getResourceAsStream(path)));
+            name = path;
         }
     }
 

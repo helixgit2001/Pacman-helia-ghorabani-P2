@@ -8,7 +8,7 @@ import engine.core_kernel.EventManager;
  * Event allowing to display the image of the dead panoel
  */
 public class EventPowerfulPacDie extends Event {
-    private Entity entityOwned;
+    private final Entity entityOwned;
 
     protected EventPowerfulPacDie(Entity entityOwned, Entity entity, int time) {
         super(entity, time);
