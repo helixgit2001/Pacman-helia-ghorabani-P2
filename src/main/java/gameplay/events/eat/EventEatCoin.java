@@ -18,7 +18,7 @@ import static gameplay.LevelGenerator.CopyGhosts;
 public class EventEatCoin extends Event {
     private PacmanModel pacmanModel;
     private Map map;
-    private int c = 200;
+    private int c = 400;
 
     public EventEatCoin(PacmanModel pacmanModel, Entity entity, Map map) throws InterruptedException {
         super(entity);
@@ -45,7 +45,7 @@ int s = 0;
                 s = GameModel.getInstance().getPacmanModel().getScore();
 
             }
-            if (GameModel.getInstance().getPacmanModel().getScore() > s + 5 * c) {
+            if (GameModel.getInstance().getPacmanModel().getScore() > s + (5 * c)) {
                 System.out.println("run ghosts");
                 LevelGenerator.ghosts.get(0).setControllerComponent(CopyGhosts.get(0).getControllerComponent());
                 LevelGenerator.ghosts.get(1).setControllerComponent(CopyGhosts.get(1).getControllerComponent());
