@@ -1,4 +1,4 @@
-package gameplay.builder.ghost;
+package gameplay.builder.ghosts;
 
 import gameplay.EntityType;
 import gameplay.al_movement.SmartShortestPathAl;

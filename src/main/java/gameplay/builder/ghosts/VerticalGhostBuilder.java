@@ -1,7 +1,7 @@
-package gameplay.builder.ghost;
+package gameplay.builder.ghosts;
 
         import gameplay.EntityType;
-        import gameplay.al_movement.HorizontalAl;
+        import gameplay.al_movement.VerticalAl;
         import gameplay.py.Displacement;
         import gameplay.py.GhostPhy;
         import engine.core_kernel.Map;
@@ -13,10 +13,10 @@ package gameplay.builder.ghost;
 /**
  * Builder corresponding to the green ghost
  */
-public class HorizontalGhostBuilder extends EntityBuilder {
+public class VerticalGhostBuilder extends EntityBuilder {
     private final Map map;
 
-    public HorizontalGhostBuilder(Map map){
+    public VerticalGhostBuilder(Map map){
         this.map = map;
     }
 
@@ -39,7 +39,7 @@ public class HorizontalGhostBuilder extends EntityBuilder {
 
     @Override
     public void buildContComp() {
-            entity.setControllerComponent(new HorizontalAl());
+            entity.setControllerComponent(new VerticalAl());
     }
 
     @Override
@@ -52,11 +52,13 @@ public class HorizontalGhostBuilder extends EntityBuilder {
     }
 
     @Override
-    public void buildGraphComp(double width, double height) {
+    public void buildGraphComp(double width, double heigth) {
         Graphics graphics = new Graphics(2);
-        graphics.setImage("/Image/ghost/HorizontalGhost.png");
-        graphics.setHeight(height);
+        graphics.setImage("/Image/ghost/VerticalGhost.png");
+        graphics.setHeight(heigth);
         graphics.setWidth(width);
         entity.setGraphicsComponent(graphics);
     }
 }
+
+

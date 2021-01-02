@@ -1,32 +1,29 @@
-package gameplay.builder.ghost;
+package gameplay.builder.ghosts;
 
 import gameplay.EntityType;
+import gameplay.al_movement.RandomAL;
 import gameplay.py.Displacement;
 import gameplay.py.GhostPhy;
-import engine.al.AL;
+import engine.core_kernel.Map;
 import engine.core_kernel.builder.EntityBuilder;
-import gameplay.al_movement.ShortestPathAl;
 import engine.graphic.Graphics;
 import engine.phy.BoxCollider;
 import engine.phy.Position;
 
 /**
- * Builder corresponding to the red ghost
+ * Builder corresponding to the green ghost
  */
-public class RedGhostBuilder extends EntityBuilder {
-    private AL al;
+public class GreenGhostBuilder extends EntityBuilder {
+    private final Map map;
 
-    public AL getAl() {
-        return al;
-    }
-
-
-    public RedGhostBuilder(ShortestPathAl shortestPathAl) {
-        al = shortestPathAl;
+    public GreenGhostBuilder(Map map){
+        this.map = map;
     }
 
     @Override
     public void buildPosition(Position position) {
+        // AL setting
+        position.setX(position.getX());
         entity.setPosition(position);
     }
 
@@ -42,25 +39,24 @@ public class RedGhostBuilder extends EntityBuilder {
 
     @Override
     public void buildContComp() {
-        // AI setting
-        entity.setControllerComponent(al);
+        entity.setControllerComponent(new RandomAL());
     }
 
     @Override
     public void buildPhysComp(double length, double width) {
-        Position position1 = new Position(entity.getPosition().getX(), entity.getPosition().getY());
+
+        Position position1 = new Position(entity.getPosition().getX() , entity.getPosition().getY());
         Position position2 = new Position(entity.getPosition().getX() + length, entity.getPosition().getY() + width);
 
         entity.setPhysicsComponent(new GhostPhy(1, new BoxCollider(position1, position2)));
     }
 
     @Override
-    public void buildGraphComp(double width, double height) {
-        // Initialization of the graphics component
+    public void buildGraphComp(double length, double width) {
         Graphics graphics = new Graphics(2);
-        graphics.setImage("/Image/ghost/GhostRed.png");
-        graphics.setHeight(height);
-        graphics.setWidth(width);
+        graphics.setImage("/Image/ghost/GhostGreen.png");
+        graphics.setHeight(width);
+        graphics.setWidth(length);
         entity.setGraphicsComponent(graphics);
     }
 }

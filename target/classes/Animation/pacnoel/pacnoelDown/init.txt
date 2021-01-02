@@ -1,3 +1,4 @@
 /Animation/pacnoel/pacnoelDown/1.png
 /Animation/pacnoel/pacnoelDown/2.png
 /Animation/pacnoel/pacnoelDown/3.png
+/Animation/pacnoel/pacnoelDown/4.png

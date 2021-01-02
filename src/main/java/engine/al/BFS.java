@@ -25,14 +25,14 @@ public class BFS {
     /**
      * Shortest path algorithm through colliders
      * @param origin position initial
-     * @param target NPC objective position
+     * @param target objective position
      * @return List position du critical path
      */
     public List<Position> pathFinding(Entity origin, Entity target){
         Position position_origin = map.getPositionEntity(origin);
-        Position position_target = map.getPositionEntity(target);
+        Position targetPos = map.getPositionEntity(target);
 
-        if(position_target == null || position_origin == null)
+        if(targetPos == null || position_origin == null)
             return  new ArrayList<>();
 
         map.resetDistance();
@@ -85,9 +85,9 @@ public class BFS {
 
 
         // Compute Path
-        int x = (int)position_target.getX(), y = (int)position_target.getY();
+        int x = (int)targetPos.getX(), y = (int)targetPos.getY();
         listPositions = new ArrayList<>();
-        listPositions.add(position_target);
+        listPositions.add(targetPos);
 
         if(map.getDistance(x, y) == -1)
             return new ArrayList<>();

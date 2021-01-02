@@ -12,10 +12,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestUnitIA {
+public class TestUnitIAl {
 
     @Test
-    public void ShortestPathIALigneDroite() {
+    public void shortestRightPath() {
         try {
             LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/TestTimer/lignedroite.txt");
         MapRep mapRep = levelGenerator.getMapRepresentation();
@@ -50,7 +50,7 @@ public class TestUnitIA {
     }
 
     @Test
-    public void ShortestPathIAMur() {
+    public void ShortestWallPath() {
         try {
 
             LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/TestTimer/mur.txt");
@@ -98,7 +98,7 @@ public class TestUnitIA {
     }
 
     @Test
-    public void ShortestPathIAPacManDisplacement() {
+    public void shortestPathToPacman() {
         try {
             LevelGenerator levelGenerator = new LevelGenerator(600, 600, "/Level/TestTimer/pacmanDisplacement.txt");
             MapRep mapRep = levelGenerator.getMapRepresentation();

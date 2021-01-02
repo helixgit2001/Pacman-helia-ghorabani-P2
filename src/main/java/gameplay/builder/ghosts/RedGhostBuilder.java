@@ -1,23 +1,28 @@
-package gameplay.builder.ghost;
+package gameplay.builder.ghosts;
 
 import gameplay.EntityType;
-import gameplay.al_movement.RandomShortestPathAl;
 import gameplay.py.Displacement;
 import gameplay.py.GhostPhy;
 import engine.al.AL;
 import engine.core_kernel.builder.EntityBuilder;
+import gameplay.al_movement.ShortestPathAl;
 import engine.graphic.Graphics;
 import engine.phy.BoxCollider;
 import engine.phy.Position;
 
 /**
- * Builder corresponding to the blue ghost
+ * Builder corresponding to the red ghost
  */
-public class BlueGhostBuilder extends EntityBuilder {
-    private final AL al;
+public class RedGhostBuilder extends EntityBuilder {
+    private AL al;
 
-    public BlueGhostBuilder(RandomShortestPathAl randomShortestPathAl) {
-        al = randomShortestPathAl;
+    public AL getAl() {
+        return al;
+    }
+
+
+    public RedGhostBuilder(ShortestPathAl shortestPathAl) {
+        al = shortestPathAl;
     }
 
     @Override
@@ -37,6 +42,7 @@ public class BlueGhostBuilder extends EntityBuilder {
 
     @Override
     public void buildContComp() {
+        // AI setting
         entity.setControllerComponent(al);
     }
 
@@ -49,12 +55,12 @@ public class BlueGhostBuilder extends EntityBuilder {
     }
 
     @Override
-    public void buildGraphComp(double length, double width) {
+    public void buildGraphComp(double width, double height) {
         // Initialization of the graphics component
         Graphics graphics = new Graphics(2);
-        graphics.setImage("/Image/ghost/GhostBlue.png");
-        graphics.setHeight(width);
-        graphics.setWidth(length);
+        graphics.setImage("/Image/ghost/GhostRed.png");
+        graphics.setHeight(height);
+        graphics.setWidth(width);
         entity.setGraphicsComponent(graphics);
     }
 }

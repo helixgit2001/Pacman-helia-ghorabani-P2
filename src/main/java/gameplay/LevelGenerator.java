@@ -5,7 +5,7 @@ import gameplay.al_movement.ShortestPathAl;
 import gameplay.al_movement.SmartShortestPathAl;
 import gameplay.builder.*;
 import gameplay.builder.object.*;
-import gameplay.builder.ghost.*;
+import gameplay.builder.ghosts.*;
 import engine.al.BFS;
 import engine.core_kernel.builder.*;
 import engine.al.MapRep;
@@ -46,21 +46,21 @@ public class LevelGenerator {
         this.w = length;
         this.l = width;
         initPositionEntities = new HashMap<>();
-        BFS BFS = new BFS(Arrays.asList(EntityType.Blue.name, EntityType.GIFT.name, EntityType.GHOST.name, EntityType.RED.name));
+        BFS bfs = new BFS(Arrays.asList(EntityType.Blue.name, EntityType.GIFT.name, EntityType.GHOST.name, EntityType.RED.name));
         shortestPathAl = new ShortestPathAl(new BFS((List<String>) this.mapRep));
         randomShortestPathAl = new RandomShortestPathAl();
         smartShortestPathAl = new SmartShortestPathAl();
-        shortestPathAl.setBfs(BFS);
-        randomShortestPathAl.setBfs(BFS);
-        smartShortestPathAl.setPathFinder(BFS);
+        shortestPathAl.setBfs(bfs);
+        randomShortestPathAl.setBfs(bfs);
+        smartShortestPathAl.setPathFinder(bfs);
         map = new Map(new Position(0,0), new Position(length , width ));
 
         readFile(path);
 
-        map.setLimitBottomRight(new Position(this.width *matrix[0].length, this.length *matrix.length));
+        map.setLimitBottomRight(new Position(this.width * matrix[0].length, this.length * matrix.length));
         map.setMatrix(matrix);
         MapRep mapRep = new MapRep(map);
-        BFS.setMap(mapRep);
+        bfs.setMap(mapRep);
     }
 
 
