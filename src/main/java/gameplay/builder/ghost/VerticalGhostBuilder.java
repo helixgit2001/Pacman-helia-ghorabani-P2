@@ -2,8 +2,8 @@ package gameplay.builder.ghost;
 
         import gameplay.EntityType;
         import gameplay.al_movement.VerticalAl;
-        import gameplay.physics.Displacement;
-        import gameplay.physics.GhostPhy;
+        import gameplay.py.Displacement;
+        import gameplay.py.GhostPhy;
         import engine.core_kernel.Map;
         import engine.core_kernel.builder.EntityBuilder;
         import engine.graphic.Graphics;

@@ -4,7 +4,7 @@ import gameplay.EntityType;
 import gameplay.model.GameModel;
 import engine.controller.KeyboardController;
 import engine.core_kernel.Entity;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 import engine.core_kernel.Map;
 import engine.physics.Position;
 

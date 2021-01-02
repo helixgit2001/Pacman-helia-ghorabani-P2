@@ -4,7 +4,7 @@ import engine.physics.Position;
 import engine.al.AL;
 import engine.al.BFS;
 import engine.core_kernel.Entity;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 
 import java.util.List;
 import java.util.TimerTask;

@@ -1,4 +1,4 @@
-package gameplay.physics;
+package gameplay.py;
 
 import engine.physics.Collider;
 import engine.physics.PhyComp;

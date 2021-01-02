@@ -1,8 +1,8 @@
 package gameplay.builder.object;
 
 import gameplay.EntityType;
-import gameplay.physics.Displacement;
-import gameplay.physics.ObjectPhy;
+import gameplay.py.Displacement;
+import gameplay.py.ObjectPhy;
 import engine.core_kernel.builder.EntityBuilder;
 import engine.graphic.Graphics;
 import engine.physics.BoxCollider;

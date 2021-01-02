@@ -2,7 +2,7 @@ package gameplay.controller;
 
 import gameplay.EntityType;
 import gameplay.model.GameModel;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 import engine.controller.KeyboardController;
 import engine.core_kernel.Entity;
 import engine.core_kernel.Map;

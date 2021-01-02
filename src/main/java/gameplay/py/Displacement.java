@@ -1,4 +1,4 @@
-package gameplay.physics;
+package gameplay.py;
 
 /**
  * List of possible directions in 2D

@@ -1,8 +1,8 @@
 package gameplay.builder.ghost;
 
 import gameplay.EntityType;
-import gameplay.physics.Displacement;
-import gameplay.physics.GhostPhy;
+import gameplay.py.Displacement;
+import gameplay.py.GhostPhy;
 import engine.al.AL;
 import engine.core_kernel.builder.EntityBuilder;
 import gameplay.al_movement.ShortestPathAl;

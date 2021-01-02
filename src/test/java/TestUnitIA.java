@@ -3,7 +3,7 @@ import engine.physics.Position;
 import engine.al.BFS;
 import engine.al.MapRep;
 import gameplay.al_movement.ShortestPathAl;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 import engine.core_kernel.Entity;
 import org.junit.jupiter.api.Test;
 

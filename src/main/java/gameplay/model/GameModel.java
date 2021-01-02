@@ -1,7 +1,7 @@
 package gameplay.model;
 
 import gameplay.LevelGenerator;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 import engine.core_kernel.Entity;
 import engine.core_kernel.Map;
 import engine.physics.Position;

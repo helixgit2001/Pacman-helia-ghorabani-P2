@@ -1,7 +1,7 @@
 package gameplay.al_movement;
 
 import gameplay.model.GameModel;
-import gameplay.physics.Displacement;
+import gameplay.py.Displacement;
 import engine.al.AL;
 import engine.core_kernel.Entity;
 
