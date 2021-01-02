@@ -24,7 +24,7 @@ public class BFS {
 
     /**
      * Shortest path algorithm through colliders
-     * @param origin position initial du NPC
+     * @param origin position initial
      * @param target NPC objective position
      * @return List position du critical path
      */
