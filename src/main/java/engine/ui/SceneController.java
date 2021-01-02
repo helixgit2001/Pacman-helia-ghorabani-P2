@@ -6,7 +6,7 @@ import engine.core_kernel.Map;
 
 public interface SceneController {
     /**
-     * Initialise la scene
+     * Initialise scene
      */
     void init();
 

@@ -21,19 +21,21 @@ import java.util.*;
 public class LevelGenerator {
     public static ArrayList<Entity> ghosts = new ArrayList<>();
     public final static ArrayList<Entity> CopyGhosts = new ArrayList<>();
-    private Entity pacman;
-    private Entity ghost;
-    private List<Entity>[][] matrix;
+    public static ArrayList<Entity> coins = new ArrayList<>();
+    public static ArrayList<Entity> copyCoins = new ArrayList<>();
+    private static Entity pacman;
+    private static Entity ghost;
+    private static List<Entity>[][] matrix;
     private final double w;
     private final double l;
-    private double width;
-    private double length;
-    private final Map map;
-    private final ShortestPathAl shortestPathAl;
-    private final RandomShortestPathAl randomShortestPathAl;
-    private final SmartShortestPathAl smartShortestPathAl;
-    private final HashMap<Entity, Position> initPositionEntities;
-    private int counter = 0;
+    private static double width;
+    private static double length;
+    private static  Map map;
+    private static  ShortestPathAl shortestPathAl;
+    private static  RandomShortestPathAl randomShortestPathAl;
+    private static  SmartShortestPathAl smartShortestPathAl;
+    private static  HashMap<Entity, Position> initPositionEntities;
+    private static int counter = 0;
     private MapRep mapRep;
 
     /**
@@ -97,7 +99,7 @@ public class LevelGenerator {
      * @param tab Table row
      * @param i Table row number
      */
-    private void putEntity(String[] tab, int i) {
+    public static void putEntity(String[] tab, int i) {
         int j = 0;
         double posY = (length * i);
 
@@ -178,6 +180,8 @@ public class LevelGenerator {
                         builder.getEntity().getGraphicsComponent().setImage("/Image/object/cerise.png");
                         builder.getEntity().getGraphicsComponent().setHeight(length);
                         builder.getEntity().getGraphicsComponent().setWidth(width);
+                        coins.add(builder.getEntity());
+                        copyCoins.add(new Entity(builder.getEntity()));
 
                     }
 
@@ -215,7 +219,7 @@ public class LevelGenerator {
     }
 
 
-    public void setMatrix(int i, int j, Entity entity) { this.matrix[i][j].add(entity); }
+    public static void setMatrix(int i, int j, Entity entity) { matrix[i][j].add(entity); }
 
     public Map getMap(){ return map; }
 
