@@ -1,4 +1,4 @@
-package engine.graphique;
+package engine.graphic;
 
 import javafx.scene.image.Image;
 

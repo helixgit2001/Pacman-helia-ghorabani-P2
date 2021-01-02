@@ -3,7 +3,7 @@ package engine.core_kernel;
 import engine.physics.PhyComp;
 import engine.physics.Position;
 import engine.controller.ControllerComp;
-import engine.graphique.Graphics;
+import engine.graphic.Graphics;
 
 import java.util.ArrayList;
 

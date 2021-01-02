@@ -8,8 +8,8 @@ import gameplay.physics.Displacement;
 import gameplay.physics.PacmanPhy;
 import engine.core_kernel.Map;
 import engine.core_kernel.builder.EntityBuilder;
-import engine.graphique.AnimationManager;
-import engine.graphique.Graphics;
+import engine.graphic.AnimationManager;
+import engine.graphic.Graphics;
 import engine.physics.BoxCollider;
 import engine.physics.Position;
 

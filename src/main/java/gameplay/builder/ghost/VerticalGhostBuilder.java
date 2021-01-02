@@ -2,12 +2,11 @@ package gameplay.builder.ghost;
 
         import gameplay.EntityType;
         import gameplay.al_movement.VerticalAl;
-        import gameplay.controller.GhostController;
         import gameplay.physics.Displacement;
         import gameplay.physics.GhostPhy;
         import engine.core_kernel.Map;
         import engine.core_kernel.builder.EntityBuilder;
-        import engine.graphique.Graphics;
+        import engine.graphic.Graphics;
         import engine.physics.BoxCollider;
         import engine.physics.Position;
 
