@@ -19,7 +19,7 @@ public class EventChangeLevel extends Event {
     public void handle() {
         controller.getGameView().getChildren().clear();
         controller.setNewLevel();
-        controller.setEndlevel(false);
+        controller.setEndLevel(false);
         controller.getGameManager().setMap(controller.getLevelGenerator().getMap());
         controller.init();
     }

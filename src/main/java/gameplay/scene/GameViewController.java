@@ -20,7 +20,7 @@ public class GameViewController implements SceneController {
     private LevelGenerator levelGenerator;
     private final View gameView;
     private int currentLvl;
-    private boolean endlevel;
+    private boolean endLevel;
     private final int nbLevel;
 
     private static Score score = new Score();;
@@ -32,14 +32,14 @@ public class GameViewController implements SceneController {
 
     /**
      * Class used to manage the game view
-     * @param nbLevel Total number of levels
-     * @param currentlevel Current level
+     * @param nLevel Total number of levels
+     * @param currentLevel Current level
      */
-    public GameViewController(int nbLevel, int currentlevel) {
-        this.nbLevel = nbLevel;
-        this.endlevel = false;
-        this.currentLvl = currentlevel;
-        levelGenerator = new LevelGenerator(512,512,"/Level/level" + currentlevel + ".txt");
+    public GameViewController(int nLevel, int currentLevel) {
+        this.nbLevel = nLevel;
+        this.endLevel = false;
+        this.currentLvl = currentLevel;
+        levelGenerator = new LevelGenerator(512,512,"/Level/level" + currentLevel + ".txt");
         gameManager = new GameManager(levelGenerator.getMap());
         GameModel.getInstance().setLevelGenerator(levelGenerator);
         gameView = new GameView();
@@ -86,8 +86,8 @@ public class GameViewController implements SceneController {
         }
         updateUI();
 
-        if (!isCoinExist() && !endlevel) {
-            endlevel = true;
+        if (!isCoinExist() && !endLevel) {
+            endLevel = true;
             SoundManager.getInstance().stopAllSound();
             ++currentLvl;
             if (currentLvl > nbLevel) {
@@ -191,8 +191,8 @@ public class GameViewController implements SceneController {
         return levelGenerator;
     }
 
-    public void setEndlevel(boolean endlevel) {
-        this.endlevel = endlevel;
+    public void setEndLevel(boolean endLevel) {
+        this.endLevel = endLevel;
     }
 
     public static Score getScore() {
